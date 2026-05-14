@@ -22,6 +22,7 @@ import linkedinGray from "./linkedin_gray.svg";
 //Projects
 import githubCyan from "./github_cyan.svg";
 
+//Color de bordes de animaciion #00d3f3
 
 export const Icons = {
     logos: {

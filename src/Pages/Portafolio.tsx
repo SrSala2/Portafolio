@@ -1,4 +1,5 @@
 import About from "../Components/About";
+import Experience from "../Components/Experience"
 import Home from "../Components/Home";
 import NaviBar from "../Components/NaviBar";
 import Projects from "../Components/Projects";
@@ -13,6 +14,7 @@ export default function Index() {
     <About />
     <Skills />
     <Projects />
+    <Experience />
     </>
   )
 }

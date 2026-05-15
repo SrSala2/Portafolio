@@ -1,13 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Estilos globales opcionales */
-:root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply bg-slate-50 text-slate-900 antialiased;
-}
+@import "tailwindcss";

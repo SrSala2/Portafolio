@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# 🚀 Portafolio Personal - Bryam Smith Pérez Hernández
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> "Creando experiencias digitales fluidas, escribiendo código limpio con herramientas modernas."
 
-Currently, two official plugins are available:
+Este repositorio contiene el código fuente de mi portafolio profesional interactivo, diseñado para presentar mi perfil como **Desarrollador Fullstack** y **Estudiante de Ingeniería de Sistemas**. El proyecto está enfocado en el alto rendimiento, la arquitectura escalable y un diseño UI/UX en modo oscuro altamente optimizado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Stack Tecnológico
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto ha sido construido utilizando las mejores prácticas de la industria y un stack moderno:
 
-## Expanding the ESLint configuration
+*   **Core:** [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+*   **Build Tool:** [Vite](https://vitejs.dev/) (para un desarrollo hiper-rápido y builds optimizadas).
+*   **Estilizado:** [Tailwind CSS](https://tailwindcss.com/) (Diseño responsivo, utility-first y soporte nativo para Dark Mode).
+*   **Iconografía:** [Lucide React](https://lucide.dev/) + Assets SVG personalizados.
+*   **Arquitectura:** Diseño Modular, Principios DRY, Clean Code y Patrón Barrel para las exportaciones.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Estructura del Proyecto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+La arquitectura sigue el principio de Separación de Responsabilidades (SoC), garantizando escalabilidad:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+├── src/
+│   ├── assets/       # Centralización de imágenes, SVGs y el objeto de exportación (Icons)
+│   ├── Components/   # Componentes modulares y reutilizables (About, Experience, etc.)
+│   │   ├── index.ts  # Implementación de Barrel Pattern para imports limpios
+│   ├── App.tsx       # Componente raíz
+│   ├── Portafolio.tsx# Orquestador principal de vistas
+│   └── main.tsx      # Punto de entrada de React + Vite
+├── public/           # Archivos estáticos (favicon, etc.)
+├── tailwind.config.js# Configuración global de estilos
+└── tsconfig.json     # Configuración estricta de TypeScript

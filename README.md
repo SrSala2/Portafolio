@@ -2,7 +2,7 @@
 
 > "Creando experiencias digitales fluidas, escribiendo código limpio con herramientas modernas."
 
-Este repositorio contiene el código fuente de mi portafolio profesional interactivo, diseñado para presentar mi perfil como **Desarrollador Fullstack** y **Estudiante de Ingeniería de Sistemas**. El proyecto está enfocado en el alto rendimiento, la arquitectura escalable y un diseño UI/UX en modo oscuro altamente optimizado.
+Este repositorio contiene el código fuente de mi portafolio profesional interactivo, diseñado para presentar mi perfil como **Desarrollador Front End** y **Estudiante de Ingeniería de Sistemas**. El proyecto está enfocado en el alto rendimiento, la arquitectura escalable y un diseño UI/UX en modo oscuro altamente optimizado.
 
 ---
 

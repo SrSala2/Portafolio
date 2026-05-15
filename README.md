@@ -1,4 +1,4 @@
-# 🚀 Portafolio Personal - Bryam Smith Pérez Hernández
+# Portafolio Personal - Bryam Smith Pérez Hernández
 
 > "Creando experiencias digitales fluidas, escribiendo código limpio con herramientas modernas."
 
@@ -6,7 +6,7 @@ Este repositorio contiene el código fuente de mi portafolio profesional interac
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 El proyecto ha sido construido utilizando las mejores prácticas de la industria y un stack moderno:
 
@@ -18,7 +18,7 @@ El proyecto ha sido construido utilizando las mejores prácticas de la industria
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 La arquitectura sigue el principio de Separación de Responsabilidades (SoC), garantizando escalabilidad:
 

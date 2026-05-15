@@ -1,20 +1,26 @@
-import About from "../Components/About";
-import Experience from "../Components/Experience"
-import Home from "../Components/Home";
-import NaviBar from "../Components/NaviBar";
-import Projects from "../Components/Projects";
-import Skills from "../Components/Skills";
+import { NaviBar, Home, About, Skills, Projects, Experience, Contact, Footer } from '../Components';
 
-
-export default function Index() {
+const Portafolio: React.FC = () => {
   return (
-    <>
-    <NaviBar />
-    <Home />
-    <About />
-    <Skills />
-    <Projects />
-    <Experience />
-    </>
-  )
-}
+    <div className=" min-h-screen text-slate-100 antialiased">
+      <header>
+        <NaviBar />
+      </header>
+      
+      <main>
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  );
+};
+
+export default Portafolio;

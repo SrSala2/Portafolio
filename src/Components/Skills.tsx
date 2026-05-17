@@ -1,7 +1,7 @@
 import React from 'react';
-import { Icons } from '../assets/icons/index'; // Ajusta la ruta según tu estructura
+import { Icons } from '../assets/icons/index';
 
-// Definimos la estructura para evitar errores de tipado
+//  estructura para evitar errores
 interface SkillItem {
   name: string;
   icon: string;
@@ -9,7 +9,7 @@ interface SkillItem {
 }
 
 const Skills: React.FC = () => {
-  // Mapeamos los datos basándonos en tu Index.js
+  //los datos de icons
   const skillsList: SkillItem[] = [
     { name: 'HTML5', icon: Icons.skills.html, color: '#E34F26' },
     { name: 'CSS3', icon: Icons.skills.css, color: '#1572B6' },
@@ -34,14 +34,14 @@ const Skills: React.FC = () => {
           </p>
         </header>
 
-        {/* Grid Layout sin porcentajes según tu preferencia */}
+        {/* Grid Layout  */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
           {skillsList.map((skill) => (
             <div
               key={skill.name}
               className="group relative bg-[#1E1E1E] rounded-2xl p-8 border border-gray-800 transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 flex flex-col items-center justify-center gap-5 shadow-xl"
             >
-              {/* Glow Effect al hacer hover */}
+              {/* Glow Effect al hacer hover   */}
               <div className="absolute inset-0 rounded-2xl bg-cyan-400/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
               <div className="w-16 h-16 flex items-center justify-center transition-transform group-hover:scale-110">
@@ -56,7 +56,7 @@ const Skills: React.FC = () => {
                 {skill.name}
               </h3>
 
-              {/* Línea decorativa inferior */}
+              {/* Línea decorativa inferior para separaa*/}
               <div
                 className="w-0 h-0.5 rounded-full transition-all duration-300 group-hover:w-full"
                 style={{ backgroundColor: skill.color }}

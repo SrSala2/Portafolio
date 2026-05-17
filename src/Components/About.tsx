@@ -12,7 +12,7 @@ const About: React.FC = () => {
         </h2>
 
         <div className="grid md:grid-cols-5 gap-8 items-center bg-[#1E1E1E] rounded-2xl p-8 md:p-12 border border-gray-800 shadow-2xl relative overflow-hidden">
-          {/* Elemento decorativo sutil (Línea de acento) */}
+          {/* Elemento decorativo  */}
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-orange-500 to-red-500 opacity-50" />
 
           <div className="md:col-span-5">

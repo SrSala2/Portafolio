@@ -12,7 +12,7 @@ interface Project {
   github: string;
 }
 
-// 2. Extracción de datos fuera del componente (Principio DRY)
+// Extracción de datos fuera de componente
 const PROJECTS_DATA: Project[] = [
   {
     title: 'TalentMatch AI',
@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
               <header className="flex items-start justify-between mb-4">
                 <h3 className="text-2xl font-bold text-gray-100">{project.title}</h3>
                 
-                {/* Estilos condicionales limpios */}
+                {/* Estilos condicionales limpios   */}
                 <span
                   className={`px-3 py-1 rounded-full text-xs font-medium border ${
                     project.statusColor === 'orange'
@@ -84,11 +84,10 @@ const Projects: React.FC = () => {
                 <a
                   href={project.github}
                   target="_blank"
-                  rel="noopener noreferrer" // Crucial para seguridad al usar target="_blank"
+                  rel="noopener noreferrer" // importantl al usar target="_blank"
                   className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium group"
                   aria-label={`Ver repositorio de ${project.title} en GitHub`}
                 >
-                  {/* Usando tu icono personalizado */}
                   <img 
                     src={Icons.projects.githubCyan} 
                     alt="GitHub Icon" 
